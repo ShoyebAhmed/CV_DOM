@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+	<title>RESUME OF S.A.RUSSEL</title>
+	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script src="app.js"></script>
+</head>
+<!--BODY-->
+<body class="flex bg-white-300 min-h-screen justify-center items-center">
+	<!-- CONTAINER -->
+	<div class="relative bg-white-500 flex flex-row w-full max-w-6xl max-h-sm m-6 bg-white-500 shadow-lg space-y-0 space-x-0 sm:text-left">
+		<!--LEFT SIDE-->
+	<div class="relative bg-gray-400 p-16 w-screen">
+		<div class="flex flex-col p-4 border-b border-black items-center">
+			
+				<img class="rounded-full h-max w-max flex items-center justify-center -top-0 left-0 pb-5"src="image.png" alt="S.A .RUSSEL">
+			
+			<h2 class="relative flex flex-col items-center pb-5 border-b-1 text-purple-700 font-bold uppercase pt-2.5 pb-2.5 text-xl cursor-pointer select-none hover:text-blue-700" onclick="workplace_info()"> Shoyeb Ahmed Russel<br><span>Junior Software Engineer</span></h2>
+			<p id="workplace" class="relative hidden flex flex-col items-center pb-5 border-b-1 text-black font-semibold  pt-2.5 pb-2.5 text-xl items-center">Dynamic Solution Innovators(DSi)</p>
+			<p id="workplace_2" class="relative hidden flex flex-col items-center pb-2 text-black border-b-1 font-semibold pt-1 text-xl items-center">(May,2021-Present)</p>
+		</div>
+		<div class="relative">
+			<h3 class="text-purple-700
+  pt-2.5
+  uppercase
+  font-bold
+  text-xl
+  text-center
+  tracking-wider
+  pb-5">      Contact Info</h3>
+			<ul class="relative">
+				<li class="relative list-none space-y-2">
+					<div class="p-2 max-w-sm mx-auto flex items-center space-x-4 space-y-1">
+    <div class="flex-shrink-0">
+    <img class="h-6 w-6" src="dial.png" alt="Dial Logo">
+  </div>
+  <div>
+    <div class="text-xl font-medium text-black">+880-1782868721</div>
+    
+  </div>
+</div>
+			</li>
+			<li class="relative list-none space-y-2">
+						<div class="p-2 max-w-sm mx-auto flex items-center space-x-4 space-y-1">
+  <div class="flex-shrink-0">
+    <img class="h-6 w-6" src="email.png" alt="Dial Logo">
+  </div>
+  <div>
+    <div class="text-xl font-medium text-black hover:blue"><a href="mailto:shoyeb.russel101@gmail.com" target="_self">shoyeb.russel101@gmail.com</a></div>
+    
+  </div>
+			</li>
+			<li class="relative list-none space-y-2">
+						<div class="p-2 max-w-sm mx-auto flex items-center space-x-4 space-y-1">
+  <div class="flex-shrink-0">
+    <img class="h-6 w-6" src="linkedin.png" alt="Dial Logo">
+  </div>
+  <div>
+    <div class="text-xl font-medium text-black"><a href="https://www.linkedin.com/in/shoyeb-ahmed-russel-264240157/">Linkedin</a></div>
+  </div>
+ </li>
+<li class="relative list-none space-y-2">
+	<div class="p-2 max-w-sm mx-auto flex items-center space-x-4 space-y-1">
+    <div class="flex-shrink-0"><img class="h-6 w-6" src="github.png" alt="github Logo"></div>
+  <div>
+    <div class="text-xl font-medium text-black"><a href="https://github.com/ShoyebAhmed">GitHub</a></div>
+  </div>
+</li>
+<li class="relative list-none space-y-2">
+	<div class="p-2 max-w-sm mx-auto flex items-center space-x-4 space-y-1">
+    <div class="flex-shrink-0"><img class="h-6 w-6" src="address.jpg" alt="Address Logo"></div>
+  <div>
+    <div class="text-xl font-medium text-black cursor-pointer" onclick="show_weather()">Jiban Nagar, Chuadanga</div>	
+</li>
+</ul>
+<div id="weatherInfo" class="hidden overlay bg-green-200  border-solid- border border-black rounded-xl  items-center">
+     <div class="font-bold p-2">
+         <h5>Temperature:<span id="temp"></span></h5>
+          <h5>Feels Like:
+             <span id="feel"></span></h5>
+           <h5>Humidity:
+            <span id="humidity"></span></h5>
+            <h5>Wind:
+            <span id="wind"></span></h5>
+            <h5> Pressure:
+            	<span id="pressure"></span></h5>
+          
+
+     </div>
+
+
+</div>
+
+
+			<div class="sm:flex flex-col education">
+			
+        <div class="relative flex flex-row p-4  mt-4 mx-auto text-center justify-center items-center space-x-4"><div>
+        <div class="text-xl font-bold text-purple-700 uppercase m-6 justify-center items-center select-none">Education</div>
+    </div>
+  <div class="flex-shrink-0">
+    <img class="h-12 w-12" src="edu_icon.png" alt="Education Logo">
+  </div>
+</div>
+      <!--RUET-->
+			<ul class="justify-center">
+				<div class="flex flex-wrap p-6  mt-4 max-w-sm mx-auto bg-purple-200 rounded-xl shadow-md flex items-center space-x-4">
+				 	<div class="text-xl font-bold text-black m-1 justify-center items-center select-none pt-1 pb-1" >BSc. in CSE</div>
+				 	<div class="flex-shrink-0"><img id="img1" class="w-5 h-5 cursor-pointer" src="expand.png" onclick="edu_1_info()"></div>
+				<div>
+				  <ul id="edu1" class="hidden ...">
+            <div class="rounded-xl w-full p-2 bg-blue-300 shadow-md items-center space-y-1">
+				      <h4 class="text-xl font-semibold text-white text-center">Rajshahi University of Engineering & Technology</h4>
+				      <h4 class="text-xl font-small text-black text-center">2016-2020</h4>
+				      <h4 class="text-xl font-small text-black text-center">CGPA 3.44 out of 4.00</h4>
+            </div>
+			    </ul>
+			  </div>
+			</ul>
+
+      
+      <!--SJHSS-->
+			<ul class="justify-center">
+				<div class="flex flex-wrap p-6  mt-4 max-w-sm mx-auto bg-purple-200 rounded-xl shadow-md flex items-center space-x-4">
+			    <div class="text-xl font-bold text-black m-1 justify-center items-center select-none pt-1 pb-1">HSC(Science)</div>
+			    <div class="flex-shrink-0"><img id="img2" class="w-5 h-5 cursor-pointer" src="expand.png" onclick="edu_2_info()"></div>
+				<div>
+					<ul id="edu2" class="hidden ...">
+            <div class="rounded-xl w-full p-2 bg-blue-300 shadow-md items-center space-y-1">
+				      <h4 class="text-xl font-semibold text-white text-center">Saint Joseph Higher Secondary School</h4>
+				      <h4 class="text-xl font-small text-black text-center">GPA 5.00 out of 5.00 (2015)</h4>
+            </div>
+			    </ul>
+				</div>
+			</ul>
+
+      <!--JTPHS-->
+			<ul class="justify-center">
+				<div class="flex flex-wrap p-6  mt-4 max-w-sm mx-auto bg-purple-200 rounded-xl shadow-md flex items-center space-x-4">
+				  <div class="text-xl font-bold text-black m-1 justify-center items-center select-none pt-1 pb-1">SSC(Science)</div>
+				  <div class="flex-shrink-0"><img id="img3" class="w-5 h-5 cursor-pointer" src="expand.png" onclick="edu_3_info()"></div>
+				<div>
+				  <ul id="edu3" class="hidden ...">
+				    <div class="rounded-xl bg-blue-300 shadow-md items-center p-4">
+				      <h4 class="text-xl font-semibold text-white text-center">Jiban Nagar Thana Pilot High School</h4>
+				      <h4 class="text-xl font-small text-black text-center">GPA 5.00 out of 5.00 (2013)</h4>
+			      </div>
+				  </ul>
+				</div>
+			</ul>
+
+		</div>
+		</div>
+
+	</div>
+	<!--RIGHT SIDE-->
+	<div class=" m-14 bg-green-200 p-12">
+		<div>
+			
+			<h3 class="pt-2 uppercase text-black font-bold text-2xl text-center justify-center">Career Objective</h3>
+			<br>
+			<div class="rounded-xl bg-blue-200 shadow-md items-center p-4">
+			<p class="font-medium text-justify">
+				As an enthusiast software engineer, I want to work in a progressive organization where I can enhance
+my skills and learning to contribute to the success of the organization and enlarge my practical experience 
+and analytical ability to solve modern real life problems.</p>
+      </div>     
+			
+		</div>
+
+<!--TECHNICAL SKILLS -->
+<ul class="justify-center">
+	<div class="flex flex-nowrap flex-col p-6  mt-4 max-w-sm w-full mx-auto bg-purple-200 rounded-full shadow-md flex items-center space-x-4">
+		<div class="flex-shrink-0"><img class="w-12 h-12 cursor-pointer" src="skills.png"></div>
+		<div class=" text-xl font-bold text-black m-1 justify-center items-center select-none pt-1 pb-1">Technical Skills</div>
+		<div class="flex-shrink-0"><img id="img4" class="w-5 h-5 cursor-pointer" src="expand.png" onclick="tech_skill_info()"></div>
+	
+</ul>
+<div class="mt-4">
+		<ul id="tech_skill" class="hidden items-center text-center ">
+				<div class="rounded-xl bg-purple-200 shadow-md items-center p-4">
+				  <li class="font-medium text-black ">Languages-C++,JAVA,C#,PYTHON,JAVASCRIPT,HTML,CSS</li>
+				  <li class="font-medium text-black ">Databases- Oracle, MySQL</li>
+				  <li class="font-medium text-black">Technologies- Android Studio, Arduino, Django, EMU8086</li>
+			  </div>
+		</ul>
+	</div>
+
+<!--PROGRAMMING ACTIVITIES-->
+
+<ul class="justify-center">
+	<div class="flex flex-nowrap p-6 flex-col mt-4 max-w-sm w-full mx-auto bg-blue-200 rounded-full shadow-md flex items-center space-x-4">
+		<div class="flex-shrink-0"><img class="justify-center items-center w-12 h-12 cursor-pointer" src="prog.png"></div>
+		<div class=" text-xl font-bold text-black m-1 justify-center items-center select-none pt-1 pb-1">Programming Activities</div>
+		<div class="flex-shrink-0"><img id="img5" class="w-5 h-5 cursor-pointer" src="expand.png" onclick="prog_skill_info()"></div>
+	
+</ul>
+<div class="mt-4">
+		<ul id="prog_skill" class="hidden items-center text-center ">
+				<div class="rounded-xl bg-blue-200 shadow-md items-center p-4">
+				  <li class="font-medium text-black ">UVA(Russel_15): Solved 50+ problems</li>
+				  <li class="font-medium text-black ">Codeforces(Russel_15): Solved 100+ problems</li>
+				  <li class="font-medium text-black">HackerRank(Russel_15) : Solved 28+ problems</li>
+				  <li class="font-medium text-black">URIonlinejudge(ID: 100554) : Solved 30+ problems</li>
+			  </div>
+		</ul>
+	</div>
+
+
+
+  <!--PARTICIPATIONS-->
+
+<ul class="justify-center">
+	<div class="flex flex-nowrap p-6 flex-col mt-4 max-w-sm w-full mx-auto bg-purple-200 rounded-full shadow-md flex items-center space-x-4">
+		<div class="flex-shrink-0"><img class="w-12 h-12 cursor-pointer" src="participate.png"></div>
+		<div class="text-xl font-bold text-black m-1 justify-center items-center select-none pt-1 pb-1">Participations</div>
+		<div class="flex-shrink-0"><img id="img6" class="w-5 h-5 cursor-pointer" src="expand.png" onclick="participate_info()"></div>
+	
+</ul>
+<div class="mt-4">
+		<ul id="participate" class="hidden items-center text-center ">
+				<div class="rounded-xl bg-purple-200 shadow-md items-center p-4">
+				  <p class="font-semibold text-black select-none">
+				  Participated in IntraRUET Programming Contest(2016) : Rank:18
+				  Participated in Marathon (2016) held by RUET Analytical Programming Lab(RAPL)<br>
+				  Participated in RUET জ্ঞানJAM(2019) held by RUET Analytical Programming Lab (RAPL)</p>
+				</div>
+		</ul>
+	</div>
+
+
+  <!--PROJECTS-->
+
+<ul class="justify-center">
+	<div class="flex flex-nowrap p-6 flex-col mt-4 max-w-sm w-full mx-auto bg-blue-200 rounded-full shadow-md flex items-center space-x-4">
+		<div class="flex-shrink-0"><img class="w-12 h-12 cursor-pointer" src="projects.jpg"></div>
+		<div class="text-xl font-bold text-black m-1 justify-center items-center select-none pt-1 pb-1">Academic Projects</div>
+	  <div class="flex-shrink-0"><img id="img7" class="w-5 h-5 cursor-pointer" src="expand.png" onclick="projects_info()"></div>
+</ul>
+<div class="mt-4">
+		<ul id="projects" class="hidden items-center text-center ">
+				<div class="rounded-xl bg-blue-200 shadow-md items-center p-4">
+
+					<!--GOOD HEALTH MANAGER-->
+				  <li class="text-black font-bold text-xl shadow-md rounded-xl bg-red-200 p-4 mt-4 cursor-pointer select-none"onclick="gd_hlt()">	Good Health Manager</li>
+				  <p id="gd_hlth" class="hidden pb-5 text-black font-medium text-xl shadow-md pt-5">(An android application which alerts and alarms in time to take medicine and foods timely) <br><br>
+Platform : Java IDE: Android Studio SDK</p>
+				  <!--UPLIMAGE-->
+          <li class="text-black font-bold text-xl shadow-md mt-4 rounded-xl bg-purple-400 p-4 cursor-pointer select-none"onclick="uplimage()">UPLIMAGE</li>
+				  <p id="upl" class="hidden pb-5 text-black font-medium text-xl shadow-md pt-5">(An android application which requires login and uploads images to authorized server) <br><br>
+Platform: Java, MySQL IDE: Android Studio SDK</p>
+          <!--ONLINE COURSE REGISTRATION-->
+           <li class="text-black font-bold text-xl shadow-md rounded-xl bg-red-200 p-4 mt-4 cursor-pointer select-none"onclick="course_reg()">Online Course Registration</li>
+				  <p id="course" class="hidden pb-5 text-black font-medium text-xl shadow-md pt-5">(An Web application which manages students log in to check individual’s registration and authorities to check the list of students and every student’s registered courses) <br><br>
+Platform : Python,MySQL Environment: Django IDE: PyCharm</p>
+
+				</div>
+		</ul>
+	</div>
+
+
+ <!--RESEARCH WORK-->
+<ul class="justify-center">
+	<div class="flex flex-nowrap flex-col p-6  mt-4 max-w-sm w-full mx-auto bg-purple-200 rounded-full shadow-md flex items-center space-x-4">
+		<div class="flex-shrink-0"><img class="w-12 h-12 cursor-pointer" src="research.png"></div>
+		<div class="text-xl font-bold text-black m-1 justify-center items-center select-none pt-1 pb-1">Research Work</div>
+		<div class="flex-shrink-0"><img id="img8" class="w-5 h-5 cursor-pointer" src="expand.png" onclick="research_info()"></div>
+	
+</ul>
+<div>
+		<ul id="res" class="hidden items-center text-center ">
+				<div class="rounded-xl bg-purple-200 shadow-md items-center p-4">
+				 <li class="text-black font-bold text-xl shadow-md rounded-xl bg-red-200 p-4 cursor-pointer select-none"onclick="hybrid()">An Improved 3D-2D CNN Approach for Hyperspectral Image Classification using PCA</li>
+				  <p id="hyb" class="hidden pb-5 text-black font-medium text-xl shadow-md mt-4 pt-5"> (This hybrid CNN network mainly facilitates both spectral and spatial features to their full extent to achieve maximal possible classification accuracy for hyperspectral images) <br><br>
+Platform: Python IDE: Jupyter Notebook & Kaggle</p>
+				</div>
+		</ul>
+	</div>
+
+
+
+	</div>
+
+                 
+	</div>
+	
+</div>
+
+</body>
+</body>
+
+</html>
